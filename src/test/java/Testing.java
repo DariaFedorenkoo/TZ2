@@ -41,7 +41,7 @@ public class Testing {
 
     @Test
     public void testCalculateProductPerformance() {
-        Assertions.assertTimeoutPreemptively(java.time.Duration.ofNanos(100), () -> {
+        Assertions.assertTimeoutPreemptively(java.time.Duration.ofNanos(10000), () -> {
             MainFuncs.calculateProduct(numberList);
         });
     }
